@@ -1,0 +1,171 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Friday, August 30, 2019
+Project Path:       C:\Users\xKang\Desktop\RC-car\hardware\rc-car.prj
+Design Path:        C:\Users\xKang\Desktop\RC-car\hardware\rc-car.pcb
+Design Title:       
+Created:            30/08/2019 12:09:56 PM
+Last Saved:         30/08/2019 4:42:51 PM
+Editing Time:       275 min
+Units:              mm (precision 1)
+
+
+Results
+=======
+
+Pad to Pad Error (P-P) between (511.6 487.6) and (511.6 487.9) on Layer "[Top]".
+    Error between Component Pad IC2.2 (Net 'A01') and Component Pad IC2.3 (Net 'GND'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 487.9) and (512.4 487.4) on Layer "Top Copper".
+    Error between Component Pad IC2.3 (Net 'GND') and Track (Net 'A01'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (511.6 488.9) and (511.6 489.1) on Layer "[Top]".
+    Error between Component Pad IC2.4 (Net 'GND') and Component Pad IC2.5 (Net 'A02'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 488.9) and (512.4 489.4) on Layer "Top Copper".
+    Error between Component Pad IC2.4 (Net 'GND') and Track (Net 'A02'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 488.9) and (512.4 489.4) on Layer "Top Copper".
+    Error between Component Pad IC2.4 (Net 'GND') and Track (Net 'A02'), Gap is 0.1 needs to be 0.3.
+Pad to Pad Error (P-P) between (511.6 490.3) and (511.6 490.4) on Layer "[Top]".
+    Error between Component Pad IC2.6 (Net 'A02') and Component Pad IC2.7 (Net 'B01'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 490.3) and (512.4 490.7) on Layer "Top Copper".
+    Error between Component Pad IC2.6 (Net 'A02') and Track (Net 'B01'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 490.4) and (512.4 490.0) on Layer "Top Copper".
+    Error between Component Pad IC2.7 (Net 'B01') and Track (Net 'A02'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 490.4) and (512.4 489.9) on Layer "Top Copper".
+    Error between Component Pad IC2.7 (Net 'B01') and Track (Net 'A02'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (511.6 491.6) and (511.6 491.8) on Layer "[Top]".
+    Error between Component Pad IC2.8 (Net 'B01') and Component Pad IC2.9 (Net 'GND'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 491.8) and (512.4 491.3) on Layer "Top Copper".
+    Error between Component Pad IC2.9 (Net 'GND') and Track (Net 'B01'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 491.8) and (512.4 491.3) on Layer "Top Copper".
+    Error between Component Pad IC2.9 (Net 'GND') and Track (Net 'B01'), Gap is 0.1 needs to be 0.3.
+Pad to Pad Error (P-P) between (511.6 492.9) and (511.6 493.1) on Layer "[Top]".
+    Error between Component Pad IC2.10 (Net 'GND') and Component Pad IC2.11 (Net 'B02'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (512.4 492.9) and (512.4 493.3) on Layer "Top Copper".
+    Error between Component Pad IC2.10 (Net 'GND') and Track (Net 'B02'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 493.1) and (504.5 492.9) on Layer "[Top]".
+    Error between Component Pad IC2.14 (Net '+6V') and Component Pad IC2.15 (Net 'PWMB'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 493.1) and (504.5 492.6) on Layer "Top Copper".
+    Error between Component Pad IC2.14 (Net '+6V') and Track (Net 'PWMB'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 492.4) and (504.5 492.2) on Layer "[Top]".
+    Error between Component Pad IC2.15 (Net 'PWMB') and Component Pad IC2.16 (Net 'BIN2'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (505.2 492.9) and (505.2 493.3) on Layer "Top Copper".
+    Error between Component Pad IC2.15 (Net 'PWMB') and Track (Net '+6V'), Gap is 0.1 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 492.4) and (504.5 492.0) on Layer "Top Copper".
+    Error between Component Pad IC2.15 (Net 'PWMB') and Track (Net 'BIN2'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 491.8) and (504.5 491.6) on Layer "[Top]".
+    Error between Component Pad IC2.16 (Net 'BIN2') and Component Pad IC2.17 (Net 'BIN1'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 492.2) and (504.5 492.6) on Layer "Top Copper".
+    Error between Component Pad IC2.16 (Net 'BIN2') and Track (Net 'PWMB'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 491.8) and (504.5 491.3) on Layer "Top Copper".
+    Error between Component Pad IC2.16 (Net 'BIN2') and Track (Net 'BIN1'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 491.1) and (504.5 490.9) on Layer "[Top]".
+    Error between Component Pad IC2.17 (Net 'BIN1') and Component Pad IC2.18 (Net 'GND'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 491.6) and (504.5 492.0) on Layer "Top Copper".
+    Error between Component Pad IC2.17 (Net 'BIN1') and Track (Net 'BIN2'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 490.4) and (504.5 490.3) on Layer "[Top]".
+    Error between Component Pad IC2.18 (Net 'GND') and Component Pad IC2.19 (Net 'STBY'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 490.9) and (504.5 491.3) on Layer "Top Copper".
+    Error between Component Pad IC2.18 (Net 'GND') and Track (Net 'BIN1'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (505.2 490.4) and (505.2 490.0) on Layer "Top Copper".
+    Error between Component Pad IC2.18 (Net 'GND') and Track (Net 'STBY'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 489.8) and (504.5 489.6) on Layer "[Top]".
+    Error between Component Pad IC2.19 (Net 'STBY') and Component Pad IC2.20 (Net '+3.3V'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 489.8) and (504.5 489.4) on Layer "Top Copper".
+    Error between Component Pad IC2.19 (Net 'STBY') and Track (Net '+3.3V'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 489.1) and (504.5 488.9) on Layer "[Top]".
+    Error between Component Pad IC2.20 (Net '+3.3V') and Component Pad IC2.21 (Net 'AIN1'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (505.2 489.1) and (505.2 488.8) on Layer "Top Copper".
+    Error between Component Pad IC2.20 (Net '+3.3V') and Track (Net 'AIN1'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (506.0 489.6) and (506.0 490.0) on Layer "Top Copper".
+    Error between Component Pad IC2.20 (Net '+3.3V') and Track (Net 'STBY'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 488.5) and (504.5 488.3) on Layer "[Top]".
+    Error between Component Pad IC2.21 (Net 'AIN1') and Component Pad IC2.22 (Net 'AIN2'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 488.9) and (504.5 489.4) on Layer "Top Copper".
+    Error between Component Pad IC2.21 (Net 'AIN1') and Track (Net '+3.3V'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (505.2 488.5) and (505.2 488.1) on Layer "Top Copper".
+    Error between Component Pad IC2.21 (Net 'AIN1') and Track (Net 'AIN2'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 487.9) and (504.5 487.6) on Layer "[Top]".
+    Error between Component Pad IC2.22 (Net 'AIN2') and Component Pad IC2.23 (Net 'PWMA'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 487.9) and (504.5 487.4) on Layer "Top Copper".
+    Error between Component Pad IC2.22 (Net 'AIN2') and Track (Net 'PWMA'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (505.2 488.3) and (505.2 488.7) on Layer "Top Copper".
+    Error between Component Pad IC2.22 (Net 'AIN2') and Track (Net 'AIN1'), Gap is 0.2 needs to be 0.3.
+Pad to Pad Error (P-P) between (504.5 487.2) and (504.5 487.0) on Layer "[Top]".
+    Error between Component Pad IC2.23 (Net 'PWMA') and Component Pad IC2.24 (Net '+6V'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (505.2 487.2) and (505.2 486.8) on Layer "Top Copper".
+    Error between Component Pad IC2.23 (Net 'PWMA') and Track (Net '+6V'), Gap is 0.1 needs to be 0.3.
+Track to Pad Error (T-P) between (505.2 487.6) and (505.2 488.1) on Layer "Top Copper".
+    Error between Component Pad IC2.23 (Net 'PWMA') and Track (Net 'AIN2'), Gap is 0.2 needs to be 0.3.
+Track to Pad Error (T-P) between (504.5 487.0) and (504.5 487.4) on Layer "Top Copper".
+    Error between Component Pad IC2.24 (Net '+6V') and Track (Net 'PWMA'), Gap is 0.2 needs to be 0.3.
+Track to Drill Hole error (T-D) at (490.4 500.4) on layer "Bottom Copper".
+    Track too wide to backoff from drill.
+Track to Pad error (T-P) at (498.7 488.1) on layer "Top Copper".
+    Error between Component Pad IC1.17 and Track (Net 'AIN2'), Gap is 0.0 needs to be 0.3.
+Track to Track Error (T-T) between (505.2 493.3) and (505.2 492.6) on Layer "Top Copper".
+    Error between Track (Net '+6V') and Track (Net 'PWMB'), Gap is 0.1 needs to be 0.3.
+Track to Board Error (T-B) between (498.8 535.2) and (498.8 537.2) on Layer "Top Copper".
+    Error between Track (Net '+6V') and Board, Gap is 1.6 needs to be 2.0.
+Track to Track Error (T-T) between (505.2 486.8) and (505.2 487.4) on Layer "Top Copper".
+    Error between Track (Net '+6V') and Track (Net 'PWMA'), Gap is 0.1 needs to be 0.3.
+Track to Track Error (T-T) between (505.2 489.4) and (505.2 488.8) on Layer "Top Copper".
+    Error between Track (Net '+3.3V') and Track (Net 'AIN1'), Gap is 0.2 needs to be 0.3.
+Track to Board Error (T-B) between (476.8 503.1) and (474.4 503.1) on Layer "Top Copper".
+    Error between Track (Net '+3.3V') and Board, Gap is 2.0 needs to be 2.0.
+Track to Track Error (T-T) between (505.2 488.7) and (505.2 488.1) on Layer "Top Copper".
+    Error between Track (Net 'AIN1') and Track (Net 'AIN2'), Gap is 0.2 needs to be 0.3.
+Track to Via Error (T-V) between (502.4 492.0) and (502.4 491.9) on Layer "Top Copper".
+    Error between Via (Net 'BIN1') and Track (Net 'BIN2'), Gap is 0.0 needs to be 0.3.
+Track to Track Error (T-T) between (512.4 490.0) and (512.4 490.7) on Layer "Top Copper".
+    Error between Track (Net 'A02') and Track (Net 'B01'), Gap is 0.3 needs to be 0.3.
+Track to Track Error (T-T) between (512.4 489.9) and (512.4 490.7) on Layer "Top Copper".
+    Error between Track (Net 'A02') and Track (Net 'B01'), Gap is 0.2 needs to be 0.3.
+Dangling Track from (498.3,513.0) to (498.3,513.1) on layer Bottom Copper
+
+Number of errors found : 54
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    Yes
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  Yes
+Drill Backoff                   Yes
+Silkscreen Overlap              Yes
+Copper Text In Board            Yes
+Min Track Width                 Yes
+Min Annular Ring                Yes
+Min Paste Size                  Yes
+Vias In Pads                    Yes
+Unplated Vias                   Yes
+Unplated Pads With Inner Tracks Yes
+
+
+Nets
+
+=====
+
+Net Completion               No
+Dangling Tracks              Yes
+Net Track Length Differences No
+
+
+
+End Of Report.

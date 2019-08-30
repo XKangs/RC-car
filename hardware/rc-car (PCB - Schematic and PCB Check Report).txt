@@ -1,0 +1,23 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Friday, August 30, 2019
+Project Path:       C:\Users\xKang\Desktop\RC-car\hardware\rc-car.prj
+Design Path:        C:\Users\xKang\Desktop\RC-car\hardware\rc-car.pcb
+Design Title:       
+Created:            30/08/2019 12:09:56 PM
+Last Saved:         30/08/2019 3:51:37 PM
+Editing Time:       224 min
+Units:              mm (precision 1)
+
+
+Checking integrity of Schematic "C:\Users\xKang\Desktop\RC-car\hardware\rc-car.prj" with PCB "C:\Users\xKang\Desktop\RC-car\hardware\rc-car.pcb"
+================================================================================================================================================
+
+
+Error: Component reference "REF1" is defined in "PSU.sch" and "MC.sch".
+Error: Component reference "REF3" is defined in "PSU.sch" and "MC.sch".
+Error: Component reference "C2" is defined in "PSU.sch" and "MC.sch".
+
+
+End Of Report.
