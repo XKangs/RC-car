@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RC car controller</string>
+    <string name="devices">Bluetooth Devices</string>
+</resources>
