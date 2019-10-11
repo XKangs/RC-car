@@ -6,7 +6,7 @@ TB6612::TB6612(uint8_t pinPWM, uint8_t pinIN1, uint8_t pinIN2, uint8_t pinSTBY){
 	_pinSTBY = pinSTBY;
 
 	isMoving = false;
-	isEnable = true;
+	isSleeping = false;
 
 	pinMode(pinPWM,OUTPUT);
 	pinMode(pinIN1,OUTPUT);
@@ -15,40 +15,51 @@ TB6612::TB6612(uint8_t pinPWM, uint8_t pinIN1, uint8_t pinIN2, uint8_t pinSTBY){
 
 	this->enable();
 }
-void TB6612::forward(uint8_t speed = 225){
+void TB6612::forward(uint8_t speed = 255){
+  isMoving = true;
 	analogWrite(_pinPWM, speed);
 	digitalWrite(_pinIN1,LOW);
 	digitalWrite(_pinIN2,HIGH);
 }
-void TB6612::backward(uint8_t speed = 225){
+void TB6612::backward(uint8_t speed = 255){
+  isMoving = true;
 	analogWrite(_pinPWM, speed);
 	digitalWrite(_pinIN1,HIGH);
 	digitalWrite(_pinIN2,LOW);
 }
 void TB6612::forward(){
+  isMoving = true;
 	digitalWrite(_pinPWM,HIGH);
 	digitalWrite(_pinIN1,LOW);
 	digitalWrite(_pinIN2,HIGH);
 }
 void TB6612::backward(){
-	digitalWrite(_pinPWM,HIGH);
-	digitalWrite(_pinIN1,HIGH);
-	digitalWrite(_pinIN2,LOW);
+  isMoving = true;
+  digitalWrite(_pinPWM,HIGH);
+  digitalWrite(_pinIN1,HIGH);
+  digitalWrite(_pinIN2,LOW);
+}
+void TB6612::reset(){
+	digitalWrite(_pinSTBY, LOW);
+	delay(50);
+	digitalWrite(_pinSTBY, HIGH);
 }
 void TB6612::enable(){
-	isEnable = true;
-	digitalWrite(_pinSTBY, isEnable);
+	isSleeping = false;
+	digitalWrite(_pinSTBY, HIGH);
 }
-void TB6612::disable(){
-	isEnable = false;
-	digitalWrite(_pinSTBY, isEnable);
+void TB6612::sleep(){
+	isSleeping = true;
+	digitalWrite(_pinSTBY, LOW);
 }
 void TB6612::shortBrake(){
+  isMoving = false;
   digitalWrite(_pinPWM,HIGH);
   digitalWrite(_pinIN1,HIGH);
   digitalWrite(_pinIN2,HIGH);
 }
 void TB6612::stop(){
+  isMoving = false;
   digitalWrite(_pinPWM,HIGH);
   digitalWrite(_pinIN1,LOW);
   digitalWrite(_pinIN2,LOW);

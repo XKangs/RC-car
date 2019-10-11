@@ -6,16 +6,17 @@
 class TB6612{
 public:
     TB6612(uint8_t pinPWM, uint8_t pinIN1, uint8_t pinIN2, uint8_t pinSTBY);
-    void forward(uint8_t speed = 225);
-    void backward(uint8_t speed = 225);
+    void forward(uint8_t speed = 255);
+    void backward(uint8_t speed = 255);
     void forward();
     void backward();
     void enable();
-    void disable();
+    void sleep();
     void shortBrake();
     void stop();
-    bool isEnable;
-	bool isMoving;
+    void reset();
+    bool isSleeping;
+    bool isMoving;
 private:
 	uint8_t _pinPWM;
 	uint8_t _pinIN1;
