@@ -267,13 +267,13 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
     }
 
     public void onSensorChanged(SensorEvent event) {
-        int throttle = cal_throttle(event.values[0],event.values[1]);
-        int steering = cal_steering(event.values[2],event.values[1]);
+        java.lang.String throttle = cal_throttle(event.values[0],event.values[1]);
+        java.lang.String steering = cal_steering(event.values[2],event.values[1]);
         java.lang.String sending =steering + "," + throttle;
         send(sending);
     }
 
-    protected int cal_steering(float x, float y){
+    protected java.lang.String cal_steering(float x, float y){
         //若Y为负数则返回最大角度
         /*if(y < 0){
             if(x > 0){
@@ -289,24 +289,24 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         int steering = (Math.round(x / 5) * 5) + 45;
         //这个算法有点问题，角度大的时候会返回-5和95,，所以把这个去掉
         if(steering < 0 ){
-            return 0;
+            return "00";
         }else if(steering > 90){
-            return 90;
+            return "90";
             //如果倾斜太少则视为没给油
         }else if(steering > 35 && steering < 55){
-            return 45;
+            return "45";
         }else{
-            return steering;
+            return Integer.toString(steering);
         }
     }
 
-    protected int cal_throttle(float x,float y){
+    protected java.lang.String cal_throttle(float x,float y){
         //若Y为负数则返回最大角度
         if(y < 0){
             if(x > 0){
-                return 100;
+                return "f10";
             }else{
-                return -100;
+                return "b10";
             }
         }
         //再计算值
@@ -314,11 +314,19 @@ public class TerminalFragment extends Fragment implements ServiceConnection, Ser
         x = (float)(Math.round(x/10)) * 10;
 
         //如果倾斜太少则视为没给油
-        int intx = Math.round(x);
-        if(intx <=20 && intx >= -20){
-            return 0;
+        int intx = Math.round(x) / 10;
+        if(intx <=2 && intx >= -2){
+            return "n00";
+        }else if(intx < 0){
+            if(intx == -10){
+                return "b10";
+            }
+            return "b0" + intx * -1;
         }else{
-            return intx;
+            if(intx == 10){
+                return "f10";
+            }
+            return "f0" + intx;
         }
     }
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
